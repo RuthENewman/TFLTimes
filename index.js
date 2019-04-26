@@ -51,6 +51,7 @@ function getRoute(fromDestination,toDestination) {
 
 
 formSubmitButton.addEventListener('click', event => {
+  showJourneysDiv.innerHTML = '';
   event.preventDefault();
   getCodes(fromDestinationInput.value.toLowerCase(), toDestinationInput.value.toLowerCase())
 })
