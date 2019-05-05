@@ -4,9 +4,12 @@ body, html {
   text-align: center;
   background-color: #005bea;
   height: 100vh;
-  overflow: visible;
   font-family: fantasy;
   font-size: 25px;
+}
+
+body {
+  overflow-y: scroll;
 }
 
 .times {
@@ -115,4 +118,31 @@ img {
 h5 {
   margin-top: 2px;
   margin-bottom: 2px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  body, html {
+    font-size: 15px;
+  }
+  .times {
+    width: 280px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .timesHeader {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    font-size: 16px;
+    width: 300px;
+  }
+
+  input {
+    font-size: 16px;
+  }
 }
